@@ -1,0 +1,14 @@
+package abstractInterfaceExceptionHandling;
+
+class First implements TestInterface{
+	
+	public void function(int x){
+		System.out.println(x);
+	}
+}
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		
+	}
+}

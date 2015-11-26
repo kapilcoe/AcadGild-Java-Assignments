@@ -1,0 +1,6 @@
+package abstractInterfaceExceptionHandling;
+
+public interface TestInterface {
+
+	void function(int x);
+}

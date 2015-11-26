@@ -1,0 +1,33 @@
+package oops2;
+
+public class Assignment3 {
+
+}
+
+
+
+class Area{
+	
+	int base;
+	int height;
+	
+	public int calculateArea(){
+	return 0;
+}
+}
+
+
+class Rectangle extends Area{
+	
+	public int calculateArea(){
+		return base*height;
+	}
+}
+
+class Triangle extends Area{
+	
+	public int calculateArea(){
+		return 0.5*base*height;
+	}
+}
+

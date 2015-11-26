@@ -1,0 +1,58 @@
+package abstractInterfaceExceptionHandling;
+
+abstract class Student{
+	String name;
+	int std;
+	int marks;
+	char grade;
+	
+	Student(String name, int std, int marks)
+	{
+		this.name = name;
+		this.std = std;
+		this.marks = marks;
+	}
+	
+	abstract void calculateGrade();
+	
+	void printInfo()
+	{
+		System.out.println(this.name);
+		System.out.println(this.std);
+		System.out.println(this.marks);
+	}
+	
+}
+
+class Info extends Student{
+	
+	Info(String name, int std, int marks) {
+		super(name, std, marks);
+		// TODO Auto-generated constructor stub
+	}
+
+	void calculateGrade(){
+		if(marks>90){
+			grade = 'A';
+		}else{
+			grade = 'B';
+		}
+	}
+	
+	void printInfo()
+	{
+		System.out.println(this.name);
+		System.out.println(this.std);
+		System.out.println(this.marks);
+		System.out.println(this.grade);
+	}
+	
+}
+public class Assignment2 {
+
+	public static void main(String[] args) {
+		Student obj1 = new Info ("kapil", 10, 95);
+		obj1.calculateGrade();
+		obj1.printInfo();
+	}
+}

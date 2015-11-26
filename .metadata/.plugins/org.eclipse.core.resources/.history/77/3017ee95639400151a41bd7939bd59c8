@@ -1,0 +1,22 @@
+package abstractInterfaceExceptionHandling;
+
+import java.util.Scanner;
+
+public class Assignment3 {
+
+	public static void main(String[] args) {
+
+		Scanner s = new Scanner(System.in);
+		int x;
+		int array[] ={10,9,8,7,6,5,4,3,2,1};
+		System.out.print("Enter the index of array to get the element : ");
+		x = s.nextInt();
+		try{
+			System.out.println(array[x]);
+		}
+		catch(ArrayIndexOutOfBoundsException E)
+		{
+			System.out.println("Please enter a non negative number less than 10");
+		}
+	}
+}

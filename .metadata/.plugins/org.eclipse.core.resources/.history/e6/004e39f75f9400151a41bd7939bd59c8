@@ -1,0 +1,30 @@
+package abstractInterfaceExceptionHandling;
+
+public interface TestInterface {
+
+	void function(int x);
+}
+
+class First implements TestInterface{
+	
+	public void function(int x){
+		System.out.println(x);
+	}
+}
+
+class Second implements TestInterface
+{
+	public void function(int x){
+		System.out.println(x*x);
+	}
+}
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		
+		TestInterface obj = new First();
+		obj.function(10);
+		TestInterface object = new Second();
+		object.function(10);
+	}
+}
